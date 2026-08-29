@@ -40,10 +40,31 @@
         }
 
         .message {
-            margin: 0;
+            margin: 0 0 22px;
             font-size: 17px;
             line-height: 1.5;
             font-weight: 400;
+        }
+
+        .close-button {
+            display: inline-block;
+            padding: 10px 24px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: #007aff;
+            color: white;
+
+            font-family: inherit;
+            font-size: 17px;
+            font-weight: 500;
+
+            cursor: pointer;
+        }
+
+        .close-button:active {
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -51,11 +72,15 @@
 <body>
 
     <div class="card">
+        
         <p class="title">This device is currently being managed by Jamf. </p>
 
         <p class="message">
             Administrator: Owen Cooper <br>Please contact your administrator for more information.
         </p>
+        <button class="close-button" onclick="history.back()">
+            Close
+        </button>
     </div>
 
 </body>
@@ -64,3 +89,6 @@
 
 
 
+<div class="card">
+        
+    </div>
