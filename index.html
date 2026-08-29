@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,23 +11,56 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 24px;
+            box-sizing: border-box;
+
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-            text-align: center;
-            background: white;
+            background: #f2f2f7;
+            color: #1c1c1e;
         }
 
-        p {
+        .card {
+            width: 100%;
+            max-width: 360px;
+            padding: 28px 24px;
+            box-sizing: border-box;
+
+            background: white;
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .title {
+            margin: 0 0 10px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .message {
+            margin: 0;
             font-size: 17px;
+            line-height: 1.5;
             font-weight: 400;
         }
     </style>
 </head>
 
 <body>
-    <h1>This device is currently being managed by JAMF. <br></h1>
-    <p>Administrator: Owen Cooper <br>Please contact your administrator for more information.</p>
+
+    <div class="card">
+        <p class="title">This device is currently being managed by Jamf. </p>
+
+        <p class="message">
+            Administrator: Owen Cooper <br>Please contact your administrator for more information.
+        </p>
+    </div>
+
 </body>
 </html>
-```
+
+
 
 
